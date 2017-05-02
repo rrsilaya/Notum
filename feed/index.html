@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<title>Announcement Feed</title>
+
+	<link rel="stylesheet" href="../assets/css/material-icons.css" type="text/css" />
+	<link rel="stylesheet" href="../assets/css/materialize.css" type="text/css" />
+	<link rel="stylesheet" href="../assets/css/main.css" type="text/css" />
+	
+	<link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+	
+</head>
+<html>
+<!-- NAVIGATIONS -->
+<div class="navbar-fixed"><nav>
+	<div class="nav-wrapper">
+		<a href="#" data-activates="slide-out" class="button-collapse blue-text text-darken-4"><i class="material-icons">menu</i></a>
+		<a href="#" class="brand-logo center blue-text text-darken-4"><img src="../assets/img/logo/notum60px.png" id="logo"></a>
+	</div>
+</nav></div>
+
+<ul id="slide-out" class="side-nav fixed">
+	<li><div class="userView">
+		<div class="background"><img src="../assets/img/header.jpg" width="100%"></div>
+		<a href="#"><img  src="../assets/img/dp.jpg" class="circle responsive-img"height="80px"></a>
+		<a href="#"><span class="white-text name boldtext">Iskolar Ako</span></a>
+		<a href="#"><span class="white-text email">iskolar@up.edu.ph</span></a>
+	</div></li>
+
+	<li><a class="subheader">Navigation</a></li>
+	<li><a class="waves-effect" href="../dashboard/index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+	<li><a class="waves-effect" href="../feed/index.html"><i class="material-icons">announcement</i>Feed</a></li>
+	<li><a class="waves-effect" href="../calendar/index.html"><i class="material-icons">today</i>Calendar</a></li>
+	<li><a class="waves-effect" href="../search/index.html"><i class="material-icons">search</i>Search</a></li>
+	<li><div class="divider"></div></li>
+	<li><a class="waves-effect" href="../settings/index.html">Account Settings</a></li>
+	<li><a class="waves-effect" id="signout">Sign Out</a></li>
+</ul>
+<!-- END NAVIGATIONS -->
+	
+<main><div class="container">
+<div class="row">
+	<div class="col s12">
+		<div class="card blue darken-4">
+			<div class="card-content">
+				<span class="card-title white-text">Announcements from UP System</span>
+				<div class="row">
+					<div class="col s6"><a href="#post1" class="modal-trigger"><div class="card-panel white blue-text text-lighten-4">Submission of Form 26</div></a></div>
+					<div class="col s6"><a href="#post2" class="modal-trigger"><div class="card-panel white blue-text text-lighten-4">Deadline of Requirements</div></a></div>
+					<div class="col s6"><a href="#post3" class="modal-trigger"><div class="card-panel white blue-text text-lighten-4">Extension of Registration Period</div></a></div>
+					<div class="col s6"><a href="#post4" class="modal-trigger"><div class="card-panel white blue-text text-lighten-4">Start of Classes AY 2017-2018</div></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="input-field col s6">
+	<i class="material-icons prefix">sort</i>
+    <select>
+      <option value="" disabled selected>Sort</option>
+      <option value="" id="sorted1">Organization Name</option>
+      <option value="" id="sorted2">Date Posted</option>
+      <option value="" id="sorted3">Date of Event</option>      
+      <option value="" id="sorted3">Ticket Price</option>
+    </select>
+  </div>
+	<div class="input-field col s6">
+	<i class="material-icons prefix">filter_list</i>
+    <select multiple>
+      <option value="" disabled selected>Filter</option>
+      <option value="">College</option>
+      <option value="">Tags</option>
+      <option value="">Month</option>
+    </select>
+  </div>
+</div>
+<!-- FEEEEEEEEEEED -->
+<div class="seenPost" id="normalPost">
+<div class="row">
+	<div class="col s12">
+		<div class="card white">
+		<div class="card-content">
+			<div class="row valign-wrapper">
+				<div class="col s2 center-align"><img src="../assets/img/orglist/ae.png" width="100%" class="circle"></div>
+				<div class="col s8">
+				<div class="detail-wrapper">
+				<div class="postdetails">
+					<span class="postname">UPLB Film Sphere</span><br>
+					<span class="blue-text text-lighten-4">March 20, 2017<br> 7:00 PM - 9:00 PM</span>
+				</div>
+				</div>
+				</div>
+				
+				<div class="col s2">
+				<div style="position: relative; height: 70px;">
+          <div class="fixed-action-btn click-to-toggle post-actions">
+            <a class="btn-floating btn-flat btn-large waves-effect">
+              <i class="large material-icons blue-text text-darken-4">keyboard_arrow_down</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">report</i></a></li>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">schedule</i></a></li>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">publish</i></a></li>
+            </ul>
+          </div>
+        </div>
+				</div>
+				
+			</div>
+			
+			<h5 class="post-title">I'm Drunk, I Love You Film Screening</h5>
+			<img src="../assets/img/content1.jpg" width="100%" class="materialboxed" data-caption="I'm Drunk, I Love You Film Showing">
+			<br>
+			<div class="chip">Film Screening</div>
+			<div class="chip">Recreation</div>
+		</div>
+		</div>
+	</div>
+</div>
+	
+<div class="row">
+	<div class="col s12">
+		<div class="card white">
+		<div class="card-content">
+			<div class="row valign-wrapper">
+				<div class="col s2 center-align"><img src="../assets/img/orglist/amm.jpg" width="100%" class="circle"></div>
+				<div class="col s8">
+				<div class="detail-wrapper">
+				<div class="postdetails">
+					<span class="postname">Alliance of Math Majors</span><br>
+					<span class="blue-text text-lighten-4">March 10, 2017<br> 7:00 PM - 9:00 PM</span>
+				</div>
+				</div>
+				</div>
+				
+				<div class="col s2">
+				<div style="position: relative; height: 70px;">
+          <div class="fixed-action-btn click-to-toggle post-actions">
+            <a class="btn-floating btn-flat btn-large waves-effect">
+              <i class="large material-icons blue-text text-darken-4">keyboard_arrow_down</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">report</i></a></li>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">schedule</i></a></li>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">cancel</i></a></li>
+            </ul>
+          </div>
+        </div>
+				</div>
+				
+			</div>
+			
+			<h5 class="post-title">MATH17 Tutorials</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec massa sodales, semper eros mollis, ultricies dolor. Cras porttitor malesuada vulputate. Vivamus vulputate, purus suscipit gravida malesuada, orci leo aliquet nisl, id commodo elit libero at turpis. Duis sem leo, imperdiet eget metus nec, feugiat bibendum ligula. Aliquam erat volutpat. Vestibulum at convallis neque. Integer dolor justo, feugiat tincidunt sodales id, tincidunt a lorem. Sed blandit dui accumsan, tristique dolor nec, lobortis nibh.
+			</p>
+			<br>
+			<div class="chip">Tutorials</div>
+			<div class="chip">Academics</div>
+		</div>
+		</div>
+	</div>
+</div>
+<!-- SPOOOON -->
+<div class="row">
+	<div class="col s12 m7">
+		<div class="card">
+			<div class="card-image">
+				<img src="../assets/img/spon1.jpg" class="materialboxed" data-caption="Startup Challenge">
+				<span class="card-title">Startup Challenge</span>
+			</div>
+			<div class="card-content">
+				<p class="boldtext blue-text text-lighten-4 right-align">SPONSORED</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec massa sodales, semper eros mollis, ultricies dolor. Cras porttitor malesuada vulputate. Vivamus vulputate, purus suscipit gravida malesuada, orci leo aliquet nisl, id commodo elit libero at turpis. </p>
+			</div>
+			<div class="card-action">
+				<a href="#" class="blue-text text-darken-4">Contact Us</a>
+				<a href="#" class="blue-text text-darken-4">Open App</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END SPOOON -->
+
+<!-- START POST -->
+<div class="row">
+	<div class="col s12">
+		<div class="card white">
+		<div class="card-content">
+			<div class="row valign-wrapper">
+				<div class="col s2 center-align"><img src="../assets/img/orglist/bsa.png" width="100%" class="circle"></div>
+				<div class="col s8">
+				<div class="detail-wrapper">
+				<div class="postdetails">
+					<span class="postname">UPLB Creatives Society</span><br>
+					<span class="blue-text text-lighten-4">March 8, 2017<br>7:00 PM - 9:00 PM</span>
+				</div>
+				</div>
+				</div>
+				
+				<div class="col s2">
+				<div style="position: relative; height: 70px;">
+          <div class="fixed-action-btn click-to-toggle post-actions">
+            <a class="btn-floating btn-flat btn-large waves-effect">
+              <i class="large material-icons blue-text text-darken-4">keyboard_arrow_down</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">report</i></a></li>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">schedule</i></a></li>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">publish</i></a></li>
+            </ul>
+          </div>
+        </div>
+				</div>
+				
+			</div>
+			
+			<h5 class="post-title">Creatives Society Orientation</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec massa sodales, semper eros mollis, ultricies dolor. Cras porttitor malesuada vulputate. Vivamus vulputate, purus suscipit gravida malesuada, orci leo aliquet nisl, id commodo elit libero at turpis.
+			</p>
+			<br>
+			<div class="chip">Orientation</div>
+		</div>
+		</div>
+	</div>
+</div>
+<!-- END POST -->
+
+<!-- START POST -->
+<div class="row">
+	<div class="col s12">
+		<div class="card white">
+		<div class="card-content">
+			<div class="row valign-wrapper">
+				<div class="col s2 center-align"><img src="../assets/img/orglist/cag.jpeg" width="100%" class="circle"></div>
+				<div class="col s8">
+				<div class="detail-wrapper">
+				<div class="postdetails">
+					<span class="postname">YouthHack UPLB</span><br>
+					<span class="blue-text text-lighten-4">March 8, 2017<br>7:00 PM - 9:00 PM</span>
+				</div>
+				</div>
+				</div>
+				
+				<div class="col s2">
+				<div style="position: relative; height: 70px;">
+          <div class="fixed-action-btn click-to-toggle post-actions">
+            <a class="btn-floating btn-flat btn-large waves-effect">
+              <i class="large material-icons blue-text text-darken-4">keyboard_arrow_down</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">report</i></a></li>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">schedule</i></a></li>
+              <li><a class="btn-floating dark lighten-4"><i class="material-icons">publish</i></a></li>
+            </ul>
+          </div>
+        </div>
+				</div>
+				
+			</div>
+			
+			<h5 class="post-title">YouthHack Bootcamp Series</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec massa sodales, semper eros mollis, ultricies dolor. Cras porttitor malesuada vulputate.
+			</p><br>
+			<img src="../assets/img/content2.jpg" width="100%" class="materialboxed" data-caption="YouthHack Bootcamp Series"><br />
+			<div class="chip">Seminar</div>
+			<div class="chip">Entrepreneurship</div>
+		</div>
+		</div>
+	</div>
+</div>
+<!-- END POST -->
+<!-- START PRELOADER -->
+<div class="center-align">
+<div class="preloader-wrapper small active">
+	<div class="spinner-layer">
+		<div class="circle-clipper left">
+			<div class="circle"></div>
+		</div><div class="gap-patch">
+		<div class="circle"></div>
+	</div><div class="circle-clipper right">
+	<div class="circle"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- END PRELOADER -->
+
+</div>
+</div>
+</main>
+
+<!-- Sorted Posts -->
+
+<!-- Modals -->
+<div id="post1" class="modal">
+	<div class="modal-content">
+		<h4>Submission of Form 26</h4>
+		<p><span class="blue-text text-lighten-4 boldtext">DEADLINE: </span>March 7, 2017</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec massa sodales, semper eros mollis, ultricies dolor. Cras porttitor malesuada vulputate. Vivamus vulputate, purus suscipit gravida malesuada, orci leo aliquet nisl, id commodo elit libero at turpis.
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="modal-action modal-close btn-flat">Close</a>
+	</div>
+</div>
+<div id="post2" class="modal">
+	<div class="modal-content">
+		<h4>Deadline of Requirements</h4>
+		<p><span class="blue-text text-lighten-4 boldtext">DEADLINE: </span>March 8, 2017</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec massa sodales, semper eros mollis, ultricies dolor. Cras porttitor malesuada vulputate. Vivamus vulputate, purus suscipit gravida malesuada, orci leo aliquet nisl, id commodo elit libero at turpis. Duis sem leo, imperdiet eget metus nec, feugiat bibendum ligula. Aliquam erat volutpat. Vestibulum at convallis neque. Integer dolor justo, feugiat tincidunt sodales id, tincidunt a lorem. Sed blandit dui accumsan, tristique dolor nec, lobortis nibh.
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="modal-action modal-close btn-flat">Close</a>
+	</div>
+</div>
+<div id="post3" class="modal">
+	<div class="modal-content">
+		<h4>Extension of Registration Period</h4>
+		<p><span class="blue-text text-lighten-4 boldtext">DEADLINE: </span>March 8, 2017</p>
+		<p>
+			Vivamus vulputate, purus suscipit gravida malesuada, orci leo aliquet nisl, id commodo elit libero at turpis. Duis sem leo, imperdiet eget metus nec, feugiat bibendum ligula. Aliquam erat volutpat. Vestibulum at convallis neque. Integer dolor justo, feugiat tincidunt sodales id, tincidunt a lorem. Sed blandit dui accumsan, tristique dolor nec, lobortis nibh.
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="modal-action modal-close btn-flat">Close</a>
+	</div>
+</div>
+<div id="post4" class="modal">
+	<div class="modal-content">
+		<h4>Start of Classes</h4>
+		<p><span class="blue-text text-lighten-4 boldtext">DEADLINE: </span>March 8, 2017</p>
+		<p>
+			Vivamus vulputate, purus suscipit gravida malesuada, orci leo aliquet nisl, id commodo elit libero at turpis. Duis sem leo, imperdiet eget metus nec, feugiat bibendum ligula. Aliquam erat volutpat. Vestibulum at convallis neque. Integer dolor justo, feugiat tincidunt sodales id, tincidunt a lorem. Sed blandit dui accumsan, tristique dolor nec, lobortis nibh.
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="modal-action modal-close btn-flat">Close</a>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script type="text/javascript" src="../assets/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="../assets/js/main.js"></script>
+</html>
+
+</html>

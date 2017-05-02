@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 672.2 153.1" style="enable-background:new 0 0 672.2 153.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#231F20;}
+	.st1{fill:#686868;}
+	.st2{font-family:'Circular-Bold';}
+	.st3{font-size:97.0662px;}
+</style>
+<g>
+	<path class="st0" d="M37.2,86.9c-3.2,3.2-3.2,8.5,0,11.7l50.6,50.6c3.2,3.2,8.5,3.2,11.7,0c3.2-3.2,3.2-8.5,0-11.7L48.9,86.9
+		C45.6,83.6,40.4,83.6,37.2,86.9z"/>
+	<path class="st0" d="M115.2,64.7c3.2-3.2,3.2-8.5,0-11.7L64.7,2.4c-3.2-3.2-8.5-3.2-11.7,0s-3.2,8.5,0,11.7l50.6,50.6
+		C106.7,67.9,112,67.9,115.2,64.7z"/>
+	<path class="st1" d="M137.4,52.1l-50.6,50.6c-3.2,3.2-3.2,8.5,0,11.7l0,0c3.2,3.2,8.5,3.2,11.7,0l50.6-50.6c3.2-3.2,3.2-8.5,0-11.7
+		l0,0C145.9,48.9,140.7,48.9,137.4,52.1z"/>
+	<path class="st0" d="M64.7,36.4L64.7,36.4c-3.2-3.2-8.5-3.2-11.7,0L2.4,86.9c-3.2,3.2-3.2,8.5,0,11.7l0,0c3.2,3.2,8.5,3.2,11.7,0
+		l50.6-50.6C67.9,44.8,67.9,39.6,64.7,36.4z"/>
+</g>
+<text transform="matrix(1 0 0 1 175.6626 106.0723)"><tspan x="0" y="0" class="st0 st2 st3">slack</tspan><tspan x="231.4" y="0" class="st1 st2 st3">board</tspan></text>
+</svg>

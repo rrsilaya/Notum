@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+		<title>Dashboard</title>
+
+		<link rel="stylesheet" href="../assets/css/material-icons.css" type="text/css" />
+		<link rel="stylesheet" href="../assets/css/materialize.css" type="text/css" />
+		<link rel="stylesheet" href="../assets/css/main.css" type="text/css" />
+		
+		<link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+			 
+	</head>
+	
+	
+<body>
+<!-- NAVIGATIONS -->
+<div class="navbar-fixed"><nav>
+	<div class="nav-wrapper">
+		<a href="#" data-activates="slide-out" class="button-collapse blue-text text-darken-4"><i class="material-icons">menu</i></a>
+		<a href="#" class="brand-logo center blue-text text-darken-4"><img src="../assets/img/logo/notum60px.png" id="logo"></a>
+	</div>
+</nav></div>
+
+<ul id="slide-out" class="side-nav fixed">
+	<li><div class="userView">
+		<div class="background"><img src="../assets/img/header.jpg" width="100%"></div>
+		<a href="#"><img  src="../assets/img/dp.jpg" class="circle responsive-img"height="80px"></a>
+		<a href="#"><span class="white-text name boldtext">Iskolar Ako</span></a>
+		<a href="#"><span class="white-text email">iskolar@up.edu.ph</span></a>
+	</div></li>
+
+	<li><a class="subheader">Navigation</a></li>
+	<li><a class="waves-effect" href="../dashboard/index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+	<li><a class="waves-effect" href="../feed/index.html"><i class="material-icons">announcement</i>Feed</a></li>
+	<li><a class="waves-effect" href="../calendar/index.html"><i class="material-icons">today</i>Calendar</a></li>
+	<li><a class="waves-effect" href="../search/index.html"><i class="material-icons">search</i>Search</a></li>
+	<li><div class="divider"></div></li>
+	<li><a class="waves-effect" href="../settings/index.html">Account Settings</a></li>
+	<li><a class="waves-effect" id="signout">Sign Out</a></li>
+</ul>
+<!-- END NAVIGATIONS -->
+
+<main>
+<div class="container">
+	<h4 class="center-align">Hello, <span class="normaltext italics blue-text text-lighten-4">Iskolar Ako</span>.</h4>
+	
+	<!-- Action Bar -->
+	<div class="row"><div class="col s12">
+		<div class="card-panel blue darken-4 nopadding">
+			<div class="row actionbar">
+				<div class="col s6 l3 center-align topicons"><a href="addpost.html" class="action-btn"><i class="small material-icons">add</i><br>Add Post</a></div>
+				<div class="col s6 l3 center-align topicons"><a href="#" class="no-internet action-btn"><i class="small material-icons">edit</i><br>Manage Posts</a></div>
+				<div class="col s6 l3 center-align"><a href="#" class="no-internet action-btn"><i class="small material-icons">drafts</i><br>View Drafts</a></div>
+				<div class="col s6 l3 center-align"><a href="#switchorg" class="modal-trigger action-btn"><i class="small material-icons">swap_vertical_circle</i><br>Switch Organization</a></div>
+			</div>
+		</div>
+	</div></div>
+	
+	<!-- Summary -->
+	<div class="row">
+		<!-- UPCOMING EVENTS -->
+		<div class="col s12 l6">
+			<div class="card white">
+				<div class="card-content">
+					<span class="card-title">Upcoming Events</span>
+					<ul class="collection">
+						<li class="collection-item avatar">
+							<img src="event1.jpg" class="circle">
+							<span class="title">Submission of COI</span>
+							<p class="grey-text">
+								5PM April 5, 2017<br>from University System
+							</p>
+							<a href="#" class="secondary-content remove-collection"><i class="material-icons">close</i></a>
+						</li>
+
+						<li class="collection-item avatar">
+							<img src="event2.png" class="circle">
+							<span class="title">Siphayo Benefit Concert</span>
+							<p class="grey-text">
+								7PM to 9PM April 10, 2017<br>from Siphayo
+							</p>
+							<a href="#" class="secondary-content remove-collection"><i class="material-icons">close</i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- ACTIVE POSTS -->
+		<div class="col s12 l6">
+			<div class="card white">
+				<div class="card-content">
+					<span class="card-title">Active Posts</span>
+					<figure class="xchart-placeholder" id="line-chart"></figure>
+					<ul class="collection">
+						<li class="collection-item avatar">
+							<i class="material-icons circle blue darken-4">event</i>
+							<span class="title">Litera Mania</span>
+							<p class="grey-text">
+								10AM to 5PM April 6, 2017<br>from Litera Mania
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<!-- MODALS -->
+<div id="switchorg" class="modal bottom-sheet">
+<div class="modal-content">
+	<h4>Switch Organization</h4>
+	<p>
+		<ul class="collection">
+			<li class="collection-item avatar">
+				<img src="../assets/img/orglist/csm.png" height="80px" class="circle">
+				<span class="title boldtext">Lambat Sining</span>
+				<p>Associate Director for Media and Publicity</p>
+				<a href="#" class="secondary-content"><i class="material-icons">check_circle</i></a>
+			</li>
+			<li class="collection-item avatar">
+				<img src="../assets/img/orglist/co.jpeg" height="80px" class="circle">
+				<span class="title boldtext">Baybayin Kolektib</span>
+				<p>Associate Director for Internal Affairs</p>
+			</li>
+			<li class="collection-item avatar">
+				<img src="../assets/img/orglist/cag.jpeg" height="80px" class="circle">
+				<span class="title boldtext">Samahan ng mga Maralita</span>
+				<p>Associate Director for External Affairs</p>
+			</li>
+			<a href="#">
+			<li class="collection-item">
+				<div class="center-align"><i class="material-icons">add</i></div>
+			</li>
+			</a>
+		</ul>
+	</p>
+</div>
+<div class="modal-footer">
+      <a href="#" class="modal-action modal-close waves-effect btn-flat">Close</a>
+</div>
+</div>
+
+<!-- <div id="addpost" class="modal modal-fixed-footer">
+<div class="modal-content">
+	<h4>Add Post</h4>
+	<div class="row">
+		<div class="input-field col l8 s12">
+			<i class="material-icons prefix">subject</i>
+			<input class="post-subject" type="text" data-length="50">
+			<label for="post-subject">Subject</label>
+		</div>
+		<div class="input-field col l4 s12">
+			<i class="material-icons prefix">place</i>
+			<input class="post-venue" type="text">
+			<label for="post-venue">Venue</label>
+		</div>
+		<div class="input-field col l12 s12">
+			<i class="material-icons prefix">mode_edit</i>
+			<textarea id="post-content" class="materialize-textarea"></textarea>
+			<label for="post-content">Content</label>
+		</div>
+		<div class="file-field input-field col l12 s12">
+			<div class="btn">
+				<span>Upload</span>
+				<input type="file">
+			</div>
+			<div class="file-path-wrapper">
+				<input class="file-path validate" type="text">
+			</div>
+		</div>
+		<div class="input-field col l12 s12">
+			<input type="date" class="datepicker" id="post-date">
+			<label for="post-date">Date</label>
+		</div>
+		<div class="input-field col l12 s12">
+			<div class="chips chips-placeholder"></div>
+		</div>
+    </div>
+</div>
+<div class="modal-footer">
+	<a href="#" class="modal-action waves-effect btn-flat" id="closepost">Close</a>
+	<a href="#" class="modal-action modal-close waves-effect btn-flat" id="postpost">Post</a>
+</div>
+</div>	 -->
+		<!-- Scripts -->
+		<script type="text/javascript" src="../assets/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<title>Search</title>
+
+	<link rel="stylesheet" href="../assets/css/material-icons.css" type="text/css" />
+	<link rel="stylesheet" href="../assets/css/materialize.css" type="text/css" />
+	<link rel="stylesheet" href="../assets/css/main.css" type="text/css" />
+	
+	<link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+</head>
+<html>
+<body>
+<!-- NAVIGATIONS -->
+<div class="navbar-fixed"><nav>
+	<div class="nav-wrapper">
+		<a href="#" data-activates="slide-out" class="button-collapse blue-text text-darken-4"><i class="material-icons">menu</i></a>
+		<a href="#" class="brand-logo center blue-text text-darken-4"><img src="../assets/img/logo/notum60px.png" id="logo"></a>
+	</div>
+</nav></div>
+
+<ul id="slide-out" class="side-nav fixed">
+	<li><div class="userView">
+		<div class="background"><img src="../assets/img/header.jpg" width="100%"></div>
+		<a href="#"><img  src="../assets/img/dp.jpg" class="circle responsive-img"height="80px"></a>
+		<a href="#"><span class="white-text name boldtext">Iskolar Ako</span></a>
+		<a href="#"><span class="white-text email">iskolar@up.edu.ph</span></a>
+	</div></li>
+
+	<li><a class="subheader">Navigation</a></li>
+	<li><a class="waves-effect" href="../dashboard/index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+	<li><a class="waves-effect" href="../feed/index.html"><i class="material-icons">announcement</i>Feed</a></li>
+	<li><a class="waves-effect" href="../calendar/index.html"><i class="material-icons">today</i>Calendar</a></li>
+	<li><a class="waves-effect" href="../search/index.html"><i class="material-icons">search</i>Search</a></li>
+	<li><div class="divider"></div></li>
+	<li><a class="waves-effect" href="../settings/index.html">Account Settings</a></li>
+	<li><a class="waves-effect" id="signout">Sign Out</a></li>
+</ul>
+<!-- END NAVIGATIONS -->
+	
+<main><div class="container">
+<h3>Search</h3>	
+<form>
+<div class="input-field">
+	<input id="search" type="search" required>
+	<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+	<i class="material-icons" id="clear">close</i>
+</div>	
+</form>
+</div></main>
+	
+<!-- Scripts -->
+<script type="text/javascript" src="../assets/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>
